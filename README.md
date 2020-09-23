@@ -29,3 +29,9 @@ sudo apt update
 sudo apt upgrade
 sudo reboot
 ```
+
+Instale o kubernetes
+```console
+sudo snap install microk8s --classic
+microk8s status --wait-ready
+```
