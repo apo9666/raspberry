@@ -30,8 +30,19 @@ sudo apt upgrade
 sudo reboot
 ```
 
+Habilite o cgroup editando o arquivo
+```console
+sudo nano /boot/firmware/cmdline.txt
+```
+adicione ao final
+```
+cgroup_enable=cpuset cgroup_enable=memory cgroup_memory=1
+```
+
+
 Instale o kubernetes
 ```console
 sudo snap install microk8s --classic
-microk8s status --wait-ready
+sudo microk8s start
+sudo microk8s status
 ```
