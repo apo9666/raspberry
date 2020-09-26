@@ -6,6 +6,11 @@ https://ubuntu.com/download/raspberry-pi
 Conecte o raspberry via ssh
 ```console
 ssh ubuntu@ubuntu
+senha ubuntu
+```
+Caso receba esse aviso "WARNING: POSSIBLE DNS SPOOFING DETECTED!" execute:
+```console
+ssh-keygen -R ubuntu
 ```
 
 Troque o hostname
